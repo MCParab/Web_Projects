@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Addition Of Two Number using Javascript</title>
+    <script type="text/javascript">
+       function addNumbers(){
+           var x=document.getElementById("no1").value;
+           var y=document.getElementById("no2").value;
+           var z=Number(x)+Number(y);
+           alert(""+z); }
+    </script>
+    <style type="text/css">
+        body{ margin:0px;padding:0px;font-family: sans-serif;font-weight: bold;font-size: 24px;}
+        nav{margin:0px auto;background-image: -webkit-linear-gradient(top,#333,#222);height:300px;padding-top:200px;}
+        #content{ margin: 0px auto;width:500px;height:300px;padding:60px;background-color:#f0f0f0;border:2 solid#000;- webkit-border-radius:10px;}
+        h1{color:#666;font-size:36px;font-weight: bold;font-family: sans-serif;text-align: center;margin-bottom:30px;}
+        label,input{margin:10px;width:200px;}
+        table{margin:0px auto;width:500px;text-align: center;color:#666;}
+        input{background:#d0d0d0;padding:10px;border:1 solid#e0e0e0;-webkit-border-radius:10px;font-size: 20px;text-align: center;box-shadow: 2px 2px 0 #828181 
+            inset;}
+        button{width:150px;height:50px;color:#fff;background:slategrey;border:1 solid lightslategrey;-webkit-border-radius:5px;margin-top:10px;font-size:    
+               20px;font-weight: bold;font-family: sans-serif;}
+        button:hover{color:#d0d0d0;}
+    </style>
+    </head>
+    <body>
+        <nav>
+            <div id="content">
+            <form name="Addition">
+                <table >
+                <caption><h1><u>Addition of two numbers</u></h1></caption>
+                <tr>
+                <td><label name="n1">First Number</label></td>
+                <td><input type="text" name="no1" id="no1"/></td>
+                </tr>
+                <tr>
+                <td><label name="n2">Second Number</label></td>
+                <td><input type="text" name="no2" id="no2"/></td>
+                </tr>
+                <tr>
+                <td colspan="2"><button id="calculate" onclick="addNumbers()">Add</button></td>
+                </tr>
+                </table>
+            </form>
+            </div>
+        </nav>
+        
+    </body>
+</html>
