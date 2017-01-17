@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ajax Based Shopping Mart</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <!--AJAX product display scripts--->
+        <script language="javascript">
+            var y;
+            function getData(y){
+                var XMLHttpRequestobj;
+                if(window.XMLHttpRequest){
+                    XMLHttpRequestobj=new XMLHttpRequest();
+                }
+                else{
+                    XMLHttpRequestobj=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                XMLHttpRequestobj.onreadystatechange=function(){
+                    if(XMLHttpRequestobj.readyState==4 && XMLHttpRequestobj.status==200){
+                        document.getElementById("productcontent").innerHTML
+                        =XMLHttpRequestobj.responseXML.getElementsByTagName(y)[0].
+                        childNodes[0].nodeValue;
+                    }        
+                }
+                XMLHttpRequestobj.open("GET","store.xml",true);
+                XMLHttpRequestobj.send();
+            }/* function getData() ends */
+        </script><!--AJAX script ends--->
+    </head>
+    <body>  
+    <!---div Header--->
+    <div id="header">
+        <div id="content">
+            <p>Ajax Based Online Mobile MegaStrore</p>
+            <p style="font-size:18px;font-weight:normal;">
+                ( Drag the product and drop it into the cart to buy it )
+            </p>
+        </div>  
+    <!--section ajax-product-cart-display--->
+    <section name="ajax-product-cart-display" class="ajax-products">
+          <div id="product-sorting">
+              <h1>Smart Phones</h1>
+              <ul>
+                  <li><a href="#" onclick="getData('asus')">Asus Zenphone 6</a></li>
+                  <li><a href="#" onclick="getData('yu')">Yu Yureka</a></li>
+                  <li><a href="#" onclick="getData('lumia')">Microsoft Lumia 535</a></li>
+                  <li><a href="#" onclick="getData('xaomi')">Xaomi Redimi Note 4G</a></li>
+              </ul>
+          </div>
+          <div id="productcontent" >
+          <!-- products displayed using AJAX from store.xml ---->
+              <h1>Welcome to All !</h1>
+              <h2>Get Exciting offers and enjoy this Summer !</h2>
+              <table style="margin:0px auto; backgroumd:#d0d0d0;"cellpadding="10">
+                  <tr>
+                      <td><img src="images/Asus-zenphone-6.jpg"/></td>
+                      <td><img src="images/micromax-yu-yureka.jpg"/></td>
+                      <td><img src="images/microsoft-lumia-535.jpg"/></td>
+                      <td><img src="images/xaomi-note-4g.jpg"/></td>
+                  </tr>
+              </table>
+          </div>
+    </section>
+    <!--ends section ajax-product-cart-display--->    
+    <!--- section ajax -cart--->   
+    <section name="ajax-cart" class="ajax-cart">
+             <div id="ajax-cart-dragdrop">
+               <h1>My Shopping  Cart</h1>
+                 <ul>
+                     <li><img src="images/Shoppingcart_128x128.png"/></li>
+                     <li><div id="divcart-list"></div></li>
+                 </ul>
+             </div>    
+    </section>
+    <!---ends section ajax -cart--->  
+    </div>
+    <!--ends Header--->    
+    </body>
+</html>

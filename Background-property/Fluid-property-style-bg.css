@@ -1,0 +1,32 @@
+/*Resposive background image using HTML5 and CSS3 */
+body{
+     /* Location of the image */
+  background-image: url(background-photo.jpg);
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#333;
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+/* css styles for div */
+ div{ font-family: "comic sans ms", sans-serif;color:#ffffff;font-size: 24px;display:block;margin:0px auto;
+      text-align:center;padding:20px;opacity:0.8;font-weight: bolder;background:#666;opacity:0.8;margin-top:100px;
+ }
+/*Responsive css for tablets */
+@media screen and (max-width:960px){
+    body{background-image: url("../../Images/background-photo-mobile-devices.jpg");}
+    div{color:#d0d0d0;background:#000;opacity:0.9;}
+}
+/*Responsive css for mobiles */
+@media screen and (max-width:500px){
+    div{font-size:18px;background:#333;}
+}
