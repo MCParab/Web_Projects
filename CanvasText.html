@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Canvas text</title>
+        <style type="text/css">
+            body{margin: 0px;padding:0px;background:#d0d0d0;color:#333;font-family: sans-serif;text-align:center;}
+            #myCanvas{width:1000px;height:500px;margin:0px auto;border:1px solid#333;background:#666;}
+        </style>
+        <script type="text/ecmascript">
+        function drawText(){
+            //get the canvas element using DOM 
+            var canvas=document.getElementById("myCanvas");
+            
+            //Make sure we don't execute when canvas not supported
+            if(canvas.getContext){
+                //use getContext for drawing on canvas 
+                var ctx=canvas.getContext('2d');
+                
+                //creating shadow
+                ctx.shadowOffsetX=2;
+                ctx.shadowOffsetY=2;
+                ctx.shadowBlur=2;
+                ctx.shadowColor="#333";
+                
+                //to draw text
+                ctx.fillStyle="#222";
+                ctx.font="bold 20px sans-serif";
+                ctx.fillText("This is Shadow Test ",50,70);
+                ctx.textAlign="center";
+
+            }
+            else{
+                alert('Canvas is not supported');
+            }
+            
+            function RotateTextSphere() {
+            step++;
+            ctx.clearRect(0, 0, can.width, can.height);
+            ctx.save();
+            ctx.translate(can.width / 2, can.height / 2);
+            ctx.scale(addScale * step, addScale * step);
+            ctx.rotate(addAngle * step);
+            ctx.fillText("Welcome", 0, 0);
+            ctx.restore();
+           if (step < steps)
+                var t = setTimeout('RotateTextSphere()', 20);
+        }
+        } 
+        </script>
+    </head>
+    <body onLoad="drawText();">
+        <h1>TEXT SHADOW WITH CANVAS</h1>
+        <br>
+        <canvas id="myCanvas">
+            
+        </canvas>
+       
+    </body>
+</html>
