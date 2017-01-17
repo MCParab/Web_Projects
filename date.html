@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Ajax Get Current Server Time</title>
+<script language="Javascript">
+ 
+function showCurrentTime()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("result").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","time.php",true);
+xmlhttp.send();
+ 
+}
+</script></head>
+<body>
+<input value="Get Time" type="button" onclick='JavaScript:setInterval ( "showCurrentTime()", 1000 );' name="GetTime">
+<div id="result" align="center"></div>
+</body>
+</html>
