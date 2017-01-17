@@ -1,0 +1,56 @@
+
+<!-- Ecommerce project MyKiranaBazaar.com --->
+
+
+<!DOCTYPE HTML>
+<html>
+      <head>
+         <title>MyKiranaBazar</title>
+         <link rel="stylesheet" href="style/main-style.css" type="text/css"/>
+      </head>
+      <body> 
+
+         <!-- head section -->
+         <section class="heading_section" id="scrollingheaders">
+                   <div id="search_box">
+                          <form method="post" id="search_form">
+                                 <input type="text" name="search_product" placeholder="Enter product to search" class="input_search" autofocus/>
+                                 <button id="search_btn">Search</button> 
+                          </form>
+                   </div>
+                  
+         </section>
+
+         <!-- product_display section --->
+         <section class="product_section" >
+
+                      <div id="product_categories">
+                             
+                      </div>                      
+
+         </section>
+          
+         <!-- footer section -->
+         <section class="footer_section">
+                  <p>MyKiranaBazar.com copyrights2015 . All rights reserved</p>
+         </section>
+
+         <!-- javascript --->
+         <script type="text/javascript">
+document.write
+function scrollMyPage(){
+	var top=document.getElementById('scrollingheaders');
+	var ypos=window.pageYOffset;
+	if (ypos>600) {
+		top.style.height="70px";	
+	}
+	else{
+		top.style.height="150px";
+		
+	}
+}
+window.addEventListener("scroll",scrollMyPage);
+</script>
+
+      </body>
+</html>.
