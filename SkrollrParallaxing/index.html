@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,maximum-scale=1">
+    <title>skrollr - parallax scrolling for the masses</title>
+    <link href="http://http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    
+<body>
+    
+    
+    <div id="progress-wrapper">
+    
+    <div id="progress-bar"
+         data-0="width:0%;background:rgba(255,255,255,0.3)"
+         data-end="width:100%;background:rgba(255,255,255,0.8)">
+        </div>
+             
+    </div>
+    
+    <section id="slide-1">
+        <div class="content"
+             data-0="opacity:0; top:40%;transform:scale(0)"
+             data-1000="opacity:1;transform:scale(1)"
+             data-2000=""
+             data-3000="opacity:0;top:-10%"
+             >
+           Parallax Scrolling 
+        </div>
+       
+    </section>
+    
+    <section id="slide-2" data-2000="top:100%" data-3000="top:0%">
+        <div class="content"
+         data-3500="transform:scale(0) rotate(180deg)"
+             data-5000="transform:scale(1) rotate(360deg)"
+             data-6000="opacity:1"
+             data-8000="opacity:0"
+             >
+            <h1>Heading</h1>
+            <p>this is the parallax scrolling website . this done using skrollr.min.js file </p>
+        </div>
+    </section>
+    
+    <section id="slide-3" data-6500="top:100%;opacity:0" data-7500="top:0%;opacity:1">
+     <div class="content"
+          data-7500="opacity:0;transform:rotate(90deg);left:-200%"
+          data-8500="opacity:1;transform:rotate(0deg);left:0%"
+          >
+        And so on ....
+    </div>
+    </section>
+    
+    
+    
+    
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
+
+</body>
+
+
+</html>
