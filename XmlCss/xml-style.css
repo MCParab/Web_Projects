@@ -1,0 +1,6 @@
+body{margin:0px ;padding:0px;background:#666;font-family:sans-serif;}
+Article{display:inline;}
+headline , para{display:block;}
+headline{margin:0px auto;font-weight:900;font-size:36px;color:#fff;text-align:center;margin-bottom:50px;text-decoration:underline;padding:40px;}
+para{width:800px;margin:0px auto;padding:10px;text-decoration:normal;color:#fff;text-align:center;border:7px dashed#fff;-moz-border-radius:10px;-webkit-border-radius:10px;padding:70px;
+font-weight:800;}
