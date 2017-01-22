@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>SiteMap</title>
+<link rel=stylesheet href="css/stylle.css" type="text/css" media=screen />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").show("slow");
+  });
+$("#hide").click(function(){
+$("#panel").hide();
+});
+
+
+  $("#flip1").click(function(){
+    $("#panel1").show(1000);
+  });
+$("#hide1").click(function(){
+$("#panel1").hide(1000);
+});
+
+$("#flip2").click(function(){
+    $("#panel2").show(1000);
+  });
+$("#hide2").click(function(){
+$("#panel2").hide(1000);
+})
+
+$("#flip3").click(function(){
+    $("#panel3").show(1000);
+  });
+$("#hide3").click(function(){
+$("#panel3").hide(1000);
+})
+});
+</script>
+ 
+<style type="text/css"> 
+#panel,#flip,#panel1,#flip1,#panel2,#flip2,#panel3,#flip3
+{
+width:600px;
+margin:0 auto;
+padding:5px;
+background-color:#d0d0d0;
+border:solid 1px #c3c3c3;
+}
+#panel1,#panel,#panel2,#panel3{
+background-color:#f8f8f8;
+}
+#panel,#panel1,#panel2,#panel3
+{
+display:none;
+}
+#panel ul,#panel1 ul,#panel2 ul,#panel3 ul{
+list-style:none;
+}
+#panel ul li a,#panel1 ul li a,#panel2 ul li a,#panel3 ul li a{
+color:#333;
+text-decoration:none;
+}
+#panel ul li a:hover,#panel1 ul li a:hover,#panel2 ul li a:hover,#panel3 ul li a:hover{
+color:#990000;
+text-decoration:underline;
+}
+#flip:hover,#flip2:hover,#flip1:hover,#flip3:hover{
+background-color:#666;
+}
+#flip:hover h3,#flip2:hover h3,#flip1:hover h3,#flip3:hover h3{
+color:#fff;}
+</style>
+</head>
+<body >
+<div id="divone">
+<h1 style="color:#FFF;" ><center> SKY KING AIRLINES</center></h1></div>
+<div id="divwrapper"> 
+   <div id="divlinks">
+      <div id="divnav" >
+         <ul>
+<li><a href="homepage.html" >Home</a></li>
+        <li><a href="fa.html" >FlyAccount</a></li>
+         <li><a href="abtus.html" >About us</a></li>
+        <li><a href="contact.html" >Contact us</a></li>
+        <li><a href="sm.html" class="current">Site Map </a></li>
+
+       </ul>
+     </div >
+   </div >
+</div>
+<div id="divfive">
+<div id="divb">
+<ul>
+<li><a href="homepage.html" >Back</a></li>
+</ul>
+</div>
+<div id="divsix">
+<center><h1><u>Sitemap</u></h1><br>
+<img src="images/sitemap.jpg"/></center><br><hr>
+<br><br>
+
+
+
+<div id="flip1"><h3>Homepage</h3></div>
+<div id="panel1">
+<ul><li><a href="homepage.html">Skyking Home Page</a></li><li><a href="#" id="hide1" style="color:#990000;">Close</a></li><ul>
+</div>
+
+
+<div id="flip"><h3>Travel Info</h3></div>
+<div id="panel">
+<ul >
+    <li><a href="book.html"/>Book Online</li>
+    <li><a href="web.html"/>Web_Check_In</li>
+    <li><a href="flista.html"/>Flight Status</li>
+    <li><a href="getfares.html"/>Get Fares</li>
+    <li><a href="so.html"/>Special Offers</li>
+    <li><a href="#" id="hide" style="color:#990000;">Close</a></li>
+</ul>
+</div>
+
+
+
+
+<div id="flip2"><h3>FlyAccount Details</h3></div>
+<div id="panel2">
+<ul >
+    <li><a href="getreg.html"/>Get Registered</li>
+    <li><a href="fa.html"/>Fly Account</li>
+    <li><a href="log.html"/>Login</li>
+    <li><a href="forgetpawd.html"/>forget password</li>
+    
+    <li><a href="#" id="hide2" style="color:#990000;">Close</a></li>
+</ul>
+</div>
+
+
+<div id="flip3"><h3>About Us </h3></div>
+<div id="panel3">
+<ul >
+    <li><a href="skyexp.html"/>SkyKing Experience</li>
+    <li><a href="abtus.html"/>About Us</li>
+    <li><a href="contact.html"/>Contact Us</li>
+    <li><a href="career.html"/>careers</li>
+    <li><a href="faq.html"/>FAQs</li>
+    <li><a href="#" id="hide3" style="color:#990000;">Close</a></li>
+</ul>
+</div>
+
+</div>
+
+
+</div><br>
+
+<div id="divcopy">
+<p>Copyright © 2014 The  SKYKing Ltd. All rights reserved.</p>
+</div>
+</body>
+</html>
