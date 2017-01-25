@@ -1,0 +1,21 @@
+<!doctype Html>
+<html>
+    <head>
+        <title>Gradients in CSS3</title>
+        <style type="text/css">
+            body{margin: 0px;padding:40px;font-family: sans-serif;font-size:54px;font-weight:900;color:#666;background: #e0e0e0;}
+            div{display:block;width:1000px;padding:20px;margin:0px auto;text-align:center;text-decoration:underline;background:#d0d0d0;}
+            /*gradient-property*/
+            #divone,#divtwo,#divthree{width:800px;margin-top:20px;font-size:36px;text-decoration:none;}
+            #divone{background-image:-webkit-linear-gradient(top,#a0a0a0,#d0d0d0);}
+            #divtwo{background-image:-webkit-radial-gradient(center,circle,#888 50%,#d0d0d0);}
+            #divthree{background-image:-webkit-repeating-linear-gradient(top,#a0a0a0,#d0d0d0);}
+        </style>
+    </head>
+    <body>
+        <div >Various Gradients in CSS3</div>
+        <div id="divone">Linear-Gradients</div>
+        <div id="divtwo">Radial-Gradients</div>
+        <div id="divthree">Repeating-linear-Gradients</div>
+    </body>
+</html>
