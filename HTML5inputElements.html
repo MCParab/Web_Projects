@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HTML 5 Input elements </title>
+      
+        <style type="text/css">
+            body{margin:0px;padding:0px;font-family: sans-serif;color:#fff;background:#fff;font-weight:bold;}
+            #wrapper{background-image:-webkit-linear-gradient(top,#333,#222);height:300px;padding:20px;}
+            #header{margin:0px auto;text-align:center;font-size:24px;}
+            #contents{display:block;width:700px;padding:30px;padding-bottom:10px;background:#e0e0e0;margin:0px auto;
+                       border:1px solid#d0d0d0;-webkit-border-radius:10px;border-radius:10px;color:#333;}
+            ul{list-style:none;}
+            ul li{margin:10px;font-size:20px;}
+            input{width:600px;height:15px;padding:10px;border-radius:5px;border:1px solid#a5a5a5;
+            font-weight: bold;}
+            input[type="submit"]{width:300px;height:50px;padding:10px;color:#fff;background:lightslategray;
+                                font-weight:bold;font-size:20px;margin-top:20px;}
+        </style>
+      
+    </head>
+    <body>
+        
+        <! contains all conents in it >
+        <section id="wrapper" name="header">
+             <! contains heading of expts>
+             <div id="header">
+                 <h1>HTML5 INPUT ELEMENTS</h1>
+                 <h2></h2>
+             </div>
+            <! contains html5 input elements >
+            <div id="contents">
+            <form method="get" name="myForm">
+            <ul>
+             <li>Password*</li>
+             <li><input type="password" name="Password" placeholder="password" required aria-required="true" autocomplete="off" autofocus/></li>
+             <li>Email*</li>
+             <li><input type="email" name="email" placeholder="leom550@gmail.com" required aria-required="true" autocomplete="off" /></li>
+             <li>Color</li>
+             <li><input type="color" name="color" required /></li>
+             <li>Telephone</li>
+             <li><input type="tel" name="phone" placeholder="9892399310" required aria-required="true" autocomplete="on" /></li>
+             <li>Number</li>
+             <li><input type="number" name="qty" min="5" max="50" step="2" value="30" /></li>
+             <li>Range</li>
+             <li style="background:#fff;"><input type="range" name="qty" min="5" max="50"  value="30" /></li>
+             <hr>
+             <li style="text-align:center;"><input type="submit" /></li>
+             </ul>
+             </form>
+            </div>
+        </section>
+    </body>
+</html>
