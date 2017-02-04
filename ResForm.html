@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>Responsive Form</title>
+    
+    <style>
+    body{
+        padding:0px;
+        margin:0px;
+    }
+    #divone{
+        margin:0px auto;
+        background-image:-webkit-linear-gradient(top,#333,#222);
+        background-image:-moz-linear-gradient(top,#333,#222);
+        height:450px;
+        padding:30px;
+    }
+        #divone h1{
+        font-size:62px;
+        color:#fff;
+        font-family:cursive ;
+        text-align:center;
+            margin-bottom:40px;
+        }
+        #form{
+            background-color:#f0f0f0;
+           width:930px;
+           margin:0px auto;
+            padding:40px;
+            padding-bottom:10px;
+            border:1 solid#e0e0e0;
+            -webkit-border-radius:15px;
+            -moz-border-radius:15px;
+        }
+        #form ul {
+            list-style: none;
+        }
+        #form ul li{
+            margin:10px;
+            height:50px;
+         
+     
+        }
+       
+        #divsquare{
+            background-color:#33cc99;
+            width:20px;
+            height:20px;
+            padding :5px;
+            font-weight:bold;
+            font-size:1.3em;
+            color:#fff;
+            text-align:center;
+            font-family: serif;
+            line-height:17px;
+            margin:10px;
+             float: left;
+        }
+          #divcontent{
+            font-weight: bold;
+              color:#666;
+              font-family: cursive;
+             padding:5px;             
+          }
+        input,select{
+            background: #e0e0e0;
+            padding:10px;
+            border:1 solid#e0e0e0;
+            border-radius:5px;
+            -moz-border-radius:5px;
+            width:300px;
+            height:50px;
+            font-family: sans-serif;
+            color:#a0a0a0;
+            font-size:18px;
+            margin:10px;
+        }
+        select{
+            width:200px;
+            background:#fff;
+            font-size:14px;
+            color:#505050;
+            font-weight:bold;
+        }
+        #compnam{
+            width:850px;
+        }
+        #email,#pass{
+            width:400px;
+        }
+    button{
+        display:blocks;
+        color:#fff;
+        width:250px;
+        padding:10px;
+        height:50px;
+        background-color:slategrey;
+        background-image:slategrey
+        opacity:0.8;
+        border:0 ;
+        margin:0 auto;
+        font-weight:bold;
+        font-size:18px;
+    }
+        button:hover{
+          background-color:lightslategrey;
+          background-color:lightslategrey;
+        }
+        
+    </style>
+</head>
+<body>
+<div id="divone"> <!-- Head div--->
+<h1>My Form </h1>   
+<div id="form"><!--- form div --->
+        <!---form --->
+    <form method="post">
+       
+       <ul><!--basic information--->
+           <li><div id="divtwo"><h2 id="divsquare">1<h2 id="divcontent">Your Basic Information</h2></div></li>
+           <li><input type="text" name="Firstname" value=" First Name "></input>
+               <input type="text" name="Lasstname" value="Last Name "></input>
+               <select name="Age">
+                     <option>Your Age </option>
+                     <option>Below 13 </option>
+                     <option>13 or Older </option>
+                </select>
+            </li>
+            <li><input type="text" name="Firstname" value=" Company Name " id="compnam"></li>
+       </ul><!--basic information ends--->
+       <br><hr >
+       <ul><!---Account-->
+           <li><div id="divtwo"><h2 id="divsquare">2<h2 id="divcontent">Your Account Credential</h2></div></li>
+           <li><input type="text" name="Email" value="Email" id="email"></input>
+               <input type="password" name="Password" value="Password" id="pass"></input>
+       </ul><!---Account -->
+       <br><hr>
+       <ul><!---Submit nutton--->
+           <li><center><button type="button">Join Us </button></center></li>
+       </ul><!--end Submit button-->
+    </form><!---form ends--->
+</div><!---div form ends--->
+</div><!---divone ends--->
+</body>
+</html>
+
+<ul>
+                                    <li><input type="text" name="Firstname" value=" First Name "></input></li>
+                                    <li><input type="text" name="Lastname" value=" Last Name "></input></li>
+                                    <li> <select name="Age"><option>Your Age </option><option>Below 13 </option><option>13 or Older </option> </select> </li>
+                                    <li><input type="text" name="CompanyName " value=" Company Name " id="compnam"></li>
+                                    <li><input type="email" name="EmailId" value=" Email " ></input></li>
+                                    <li><input type="tel" name="PhoneNumber" value="Phone Number"></input></li>
+                                    <li> <select name="Gender"><option>Gender</option><option>Male</option><option>Female</option></select></li>
+                                </ul>
