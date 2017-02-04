@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Rotate Text</title>
+     <style type="text/css">
+            body{margin: 0px;padding:0px;background:#d0d0d0;color:#333;font-family: sans-serif;text-align:center;}
+            #myCanvas{width:1000px;height:500px;margin:0px auto;border:1px solid#333;background:#666;}
+        </style>
+    <script type="text/javascript">
+        function rotateText(){
+            //get the canvas elements  using DOM 
+            var canvas=document.getElementById("myCanvas");
+            //Make sure...
+            if(canvas.getContext){
+                var ctx=canvas.getContext('2d');
+                ctx.rotate(15 * Math.PI / 180);//15 dgrees
+                ctx.fillStyle="#222";
+                ctx.font="bold 20px sans-serif";
+                ctx.fillText("This is Rotated Test ",70,50);
+                ctx.textAlign="center";   
+            }
+            else{
+                aler("Your browser do't support");
+            }
+        }
+    </script>
+</head>
+<body onLoad="rotateText()">
+   <h1>ROTETING TEXT WITH CANVAS</h1>
+        <br>
+        <canvas id="myCanvas">
+            
+        </canvas>
+</body>
+</html>
