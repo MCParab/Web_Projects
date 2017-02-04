@@ -1,0 +1,39 @@
+<!HTML DOCTYPE>
+<html>
+<head>
+    <script type="text/javascript">
+    //JSON obj ..
+    //// JSON stores data in key and value format
+        //no need to use " " to no,boolean val
+        var obj1={user:"Devesh" , age:22 , country :"United States" };
+        var obj2={user:"Kaustubh" , age:25 , country :"India" };
+        var obj3={user:"Parag" , age:24 , country :"Mexico" };
+        var obj4={user:"Aditya" , age:23 , country :"Italy" };
+
+        var obj={u1:obj1 , u2:obj2 ,u3:obj3,u4:obj4};
+        //displaying on browser 
+        document.write("<h1>JSON EXAMPLE</h1>");
+        document.write("<hr>");
+        document.write(obj1.user+" is "+obj1.age+" yrs old and lives in "+obj1.country );
+        document.write("<hr>");
+        //changing obj1,country property (updating data)
+        obj1.country ="India";
+        document.write(obj1.user+" is "+obj1.age+" yrs old and lives in "+obj1.country );
+        //obj levels..
+        document.write("<hr>");
+        document.write(obj.u2.user+" is from "+obj.u2.country);
+        //display usin Array formats
+        document.write("<hr>");
+        document.write(obj["u3"]["user"]);
+        //another example  using array 
+        document.write("<hr>");
+        var fruit=["apple","mango","Watermelon"];
+        var meats=["beef","Pork","Lamb"];
+        var dinner={arr1:fruit,arr2:meats};
+        document.write(dinner.arr2[1]+" and "+dinner.arr1[0]+" for dinner. ");
+    </script>
+</head>
+<body style="background:lightslategray;color:#fff;font-weight:bold;font-family:sans-serif;text-align:center;font-size:24px;">
+    
+</body>
+</html>
