@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Scrolling HTML </title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	#content{
+		height:150px;
+		background: slategray;
+		padding:10px;
+		-webkit-transition:all 1s;
+                -moz-transition:all 1s;
+		position: fixed;
+		width:100%;
+		box-shadow:0px 5px 10px #333,0px 5px 15px #888;
+		text-align: center;
+		font-family: sans-serif;
+	}
+	#content h1{
+		font-weight: bold;
+		font-size: 36px;
+		color: #fff;
+		margin-top:20px;
+	}
+	.container{
+	    height: 4000px;
+	    background: #d0d0d0;
+	    color:#000;
+	    padding:100px;
+	}
+
+
+	</style>
+</head>
+<body>
+<header id="content">
+	<h1>My Heading</h1>
+</header>
+<div class="container">
+</div>
+<script type="text/javascript">
+function scrollMyPage(){
+	var top=document.getElementById('content');
+	var ypos=window.pageYOffset;
+	if (ypos>600) {
+		top.style.height="70px";	
+	}
+	else{
+		top.style.height="150px";
+		
+	}
+}
+window.addEventListener("scroll",scrollMyPage);
+</script>
+</body>
+</html>
