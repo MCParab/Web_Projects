@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+	<title>Business Web Design</title>
+	<link rel="stylesheet" text="text/css" href="main.css">
+  <meta name="description" content="Responsive Web Page">
+  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  
+  </head>
+  <body>
+      <div id="wrapper">
+        <div id="header">
+            <div id ="logo">EBusiness</div>
+            <nav>
+              <a href="">Home</a>
+              <a href="">Services</a>
+              <a href="">Career</a>
+              <a href="">Blog</a>
+              <a href="">Contact</a>
+            </nav>
+        </div>
+      </div>
+      <div id="Services" class="sectiondiv">
+      </div>
+      <div id="Career" class="sectiondiv">
+      </div>
+      <div id="Blog" class="sectiondiv">
+      </div>
+      <div id="Contact" class="sectiondiv">
+      </div>
+
+      <script src="jquery-3.1.1.min.js"></script>
+      <script>
+        $(document).on('scroll',function(){
+          if($(this).scrollTop()>1){
+            $('#wrapper').addClass('Sticky');
+          }
+          else{
+            $('#wrapper').removeClass('Sticky');
+          }
+        });
+      </script>
+  </body>
+  </html>

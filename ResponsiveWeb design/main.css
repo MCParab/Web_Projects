@@ -1,0 +1,48 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family: sans-serif;
+}
+#wrapper{
+	width: 100%;
+	padding:10px;
+	box-sizing: border-box;
+	height: 80px;
+	background-color: #333;
+	position: fixed;
+	top:0px;
+}
+#header{
+    width:80%;
+    margin:0px auto;
+}
+#logo{
+	font-weight: bold;
+	font-size: 40px;
+	color:#fff;
+	float: left;
+}
+.Sticky{
+	height: 60px;
+	line-height: 60px;
+	background-color: blue;
+}
+nav{
+	float: right;
+}
+nav a{
+	text-align: center;
+	text-decoration:none;
+	font-size: 16px;
+	font-weight: bold;
+	color:#d0d0d0;
+	margin-right: 20px;
+	line-height: 50px;
+	height: 50px;
+}
+.sectiondiv{
+	width: 100%;
+	margin:0px;
+	box-sizing: border-box;
+	height: 500px;
+}
